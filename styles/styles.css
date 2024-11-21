@@ -10,40 +10,204 @@ Table of Contents:
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
 
-
+/* grijs #899CA0 en donkergroen #1C2B32 */
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', serif;
+    font-size: 15px;
+    color: #1C2B32;
+}
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
+header {
+    text-align: center;
+}
 
+.header-style h1 {
+    font-size: 120px;
+}
+
+.header-form-search,
+.header-form-search::placeholder {
+    color: #1C2B32;
+    font-family: 'poppins', serif;
+}
+
+.header-form-button {
+    color: #FFFFFF;
+    font-family: 'poppins', serif;
+}
+
+main h3 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.section-support-button {
+    color: #FFFFFF;
+}
+
+.section-faq details p {
+    background-color: hsl(199, 28%, 34%);
+    color: #FFFFFF;
+}
+
+.reference-link {
+    color: #899CA0;
+}
+
+footer {
+    color: #FFFFFF;
+    background-color: #1C2B32;
+    text-align: center;
+    font-size: 12px;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
+main {
+    /* max-width: 1000px;   dit ziet er niet mooi uit op mijn pc */
+    margin: 0 18%;
+}
 
+main h3 {
+    padding: 50px 0 50px 0;
+}
+
+.reference-link:hover {
+    text-decoration: none;
+}
 
 /*///////////// 3.1 Header /////////////*/
 
+header {
+    position: relative;
+    background-image: url("../assets/images/mountains.jpg");
+    background-repeat: no-repeat;
+    margin-top: -100px;
+    background-origin: content-box;
+    padding-bottom: 402px;
+}
+
+.header-style {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 290px;
+}
+
+header form {
+    margin-top: 24px;
+}
+
+.header-form-search,
+.header-form-search:focus,
+.header-form-search:focus-within,
+.header-form-search:focus-visible {
+    width: 307px;
+    background: none;
+    border: 2px solid;
+    border-radius: 60px 0 0 60px;
+    padding: 37px 80px 37px 37px;
+}
+
+.header-form-button {
+    background: #1C2B32;
+    border: 2px solid #1C2B32;
+    border-radius: 0 60px 60px 0;
+    margin-left: -4px;
+    padding: 37px;
+}
 
 
 /*///////////// 3.2 Testimonial /////////////*/
 
+.section-testimonial article > p {
+    padding: 0 50px 0 70px;
+}
 
+.quote-icon-style {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -7px;
+}
+
+.quote-style {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    padding: 0 50px 0 90px;
+    line-height: 70px;
+}
+
+.quote-style img {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.section-testimonial article {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 1px 4px 15px hsl(0, 0%, 71%);
+    padding: 50px;
+    margin: 70px;
+}
 
 /*///////////// 3.3 Support /////////////*/
 
+.section-support-image {
+    border-radius: 16px;
+    width: 100%;
+}
 
+.section-testimonial-p {
+    padding: 20px 0;
+}
+
+.section-support-button {
+    background: #1C2B32;
+    border: 2px solid #1C2B32;
+    border-radius: 50px;
+    padding: 16px 24px;
+}
 
 /*///////////// 3.4 Faq /////////////*/
 
+.section-faq {
+    padding: 15px 0 40px 0;
+}
 
+.section-faq details {
+    padding: 3px 0;
+    margin: 33px 0;
+}
+
+.section-faq details:hover {
+    cursor: pointer;
+}
+
+.section-faq details p {
+    padding: 20px 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+
+footer {
+    padding: 30px 0;
+}
